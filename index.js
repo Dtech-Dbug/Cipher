@@ -1,17 +1,22 @@
 function ASCIIConverter(expression) {
-  let convertedAscii;
+  let convertedAsciiArray = [];
   let inputExpression;
   // check if arguements is string
   if (typeof arguments[0] === "string") {
     inputExpression = arguments[0];
 
     for (i in inputExpression) {
-      console.log(inputExpression[i].charCodeAt());
+      let convertedCharacterAscii = inputExpression[i].charCodeAt();
+      convertedAsciiArray.push(convertedCharacterAscii);
     }
+    return convertedAsciiArray;
   } else {
     throw `String is expected. Got ${typeof expression} instead`;
   }
 }
 
-ASCIIConverter("Hello World");
+let checkAscii = ASCIIConverter("Hello World");
+console.log(...checkAscii);
+
+console.log(String.fromCharCode(...checkAscii));
 // String is expected. Got number instead
