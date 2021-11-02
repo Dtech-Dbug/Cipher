@@ -4,8 +4,8 @@ type int = number;
 type charCodes = number[];
 
 function ASCIIConverter(expression: text) {
-  let convertedAsciiArray: charCodes = [];
   let inputExpression: text;
+  let convertedAsciiArray: charCodes = [];
 
   // check if arguements is string
   if (typeof arguments[0] === "string") {
@@ -13,7 +13,10 @@ function ASCIIConverter(expression: text) {
 
     for (let i: int = 0; i < inputExpression.length; i++) {
       let convertedCharacterAscii: int;
-      convertedCharacterAscii = inputExpression[i].charCodeAt(i);
+      console.log(
+        `current index in for loop ${i} and item ${inputExpression[i]}`
+      );
+      convertedCharacterAscii = inputExpression[i].charCodeAt(0);
       convertedAsciiArray.push(convertedCharacterAscii);
     }
     return convertedAsciiArray;
@@ -22,7 +25,7 @@ function ASCIIConverter(expression: text) {
   }
 }
 
-let checkAscii = ASCIIConverter("ello");
+let checkAscii = ASCIIConverter("HI!");
 console.log(checkAscii);
 
 // console.log(String.fromCharCode(...checkAscii));
