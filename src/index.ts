@@ -13,7 +13,9 @@ function convertToAscii(expression: text) {
 
     for (let i: int = 0; i < inputExpression.length; i++) {
       let convertedCharacterAscii: int;
+
       convertedCharacterAscii = inputExpression[i].charCodeAt(0);
+
       convertedAsciiArray.push(convertedCharacterAscii);
     }
     return convertedAsciiArray;
