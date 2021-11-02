@@ -3,7 +3,7 @@ type text = string;
 type int = number;
 type charCodes = number[];
 
-function ASCIIConverter(expression: text) {
+function convertToAscii(expression: text) {
   let inputExpression: text;
   let convertedAsciiArray: charCodes = [];
 
@@ -13,9 +13,6 @@ function ASCIIConverter(expression: text) {
 
     for (let i: int = 0; i < inputExpression.length; i++) {
       let convertedCharacterAscii: int;
-      console.log(
-        `current index in for loop ${i} and item ${inputExpression[i]}`
-      );
       convertedCharacterAscii = inputExpression[i].charCodeAt(0);
       convertedAsciiArray.push(convertedCharacterAscii);
     }
@@ -25,8 +22,8 @@ function ASCIIConverter(expression: text) {
   }
 }
 
-let checkAscii = ASCIIConverter("HI!");
-console.log(checkAscii);
+let checkAscii = convertToAscii("HI!");
+console.log(...checkAscii);
 
 // console.log(String.fromCharCode(...checkAscii));
 // String is expected. Got number instead
