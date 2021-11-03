@@ -1,5 +1,5 @@
 {
-  "name": "AskAscii",
+  "name": "ask-ascii",
   "version": "1.0.0",
   "description": "ASCII Conversions.",
   "main": "lib/index.js",
