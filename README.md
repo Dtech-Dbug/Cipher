@@ -1,4 +1,4 @@
-# AskAscii
+# ask-ascii
 
 ASCII Conversions.
 
@@ -7,12 +7,12 @@ ASCII Conversions.
 
 ## Installation using npm and setting up
 
-`npm i AskAscii`
+`npm i ask-ascii`
 
 **Setting Up**
 
 ```js
-const { convertToAscii, convertIntegerToChar } = require("AskAscii");
+const { convertToAscii, convertIntegerToChar } = require("ask-ascii");
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ const { convertToAscii, convertIntegerToChar } = require("AskAscii");
 **Code Snippets**
 
 ```js
-const { convertToAscii, convertIntegerToChar } = require("AskAscii");
+const { convertToAscii, convertIntegerToChar } = require("ask-ascii");
 
 console.log(convertToAscii("HI"));
 //[ 72, 73]
