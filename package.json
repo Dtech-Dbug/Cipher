@@ -2,12 +2,10 @@
   "name": "AskAscii",
   "version": "1.0.0",
   "description": "ASCII Conversions.",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
+  "main": "lib/index.js",
+  "types": "lib",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p ."
   },
   "repository": {
     "type": "git",
