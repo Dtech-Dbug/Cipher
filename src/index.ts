@@ -23,7 +23,14 @@ function convertToAscii(expression: text) {
 }
 
 let checkAscii = convertToAscii("HI!");
-console.log(...checkAscii);
+// console.log(...checkAscii);
 
-console.log(String.fromCharCode(...checkAscii));
-// String is expected. Got number instead
+function convertIntoToChar(...args: number[]) {
+  let charArray: string[] = [];
+  args.forEach((item) => {
+    charArray.push(String.fromCharCode(item));
+  });
+  return charArray.join("");
+}
+// let checkChar = ;
+console.log(convertIntoToChar(72, 73));
