@@ -22,6 +22,20 @@ const { convertToAscii, convertIntegerToChar } = require("AskAscii");
 |    convertToAscii 🔡➡🔢    | A String               | An array of all the ASCII codes corresponding to the character indices |
 | convertIntegerToChar 🔢➡🔡 | Any Number Of Integers | Returns the corresponding ASCII character in the order to arguments    |
 
-1. **convertToAscii**
+**Code Snippets**
 
-1. **convertIntegerToChar**
+```js
+const { convertToAscii, convertIntegerToChar } = require("AskAscii");
+
+console.log(convertToAscii("HI"));
+//[ 72, 73]
+
+let checkAscii = convertToAscii("HI!");
+console.log(...checkAscii); // 72 73
+
+console.log(convertIntegerToChar(72, 73));
+// HI
+
+let checkCharCode = convertIntegerToChar(72, 73);
+console.log(...checkCharCode); // HI
+```
