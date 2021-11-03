@@ -25,7 +25,7 @@ function convertToAscii(expression: text) {
 let checkAscii = convertToAscii("HI!");
 // console.log(...checkAscii);
 
-function convertIntoToChar(...args: number[]) {
+function convertIntegerToChar(...args: number[]) {
   let charArray: string[] = [];
   args.forEach((item) => {
     charArray.push(String.fromCharCode(item));
@@ -33,4 +33,4 @@ function convertIntoToChar(...args: number[]) {
   return charArray.join("");
 }
 // let checkChar = ;
-console.log(convertIntoToChar(72, 73));
+// console.log(convertIntoToChar(72, 73));
