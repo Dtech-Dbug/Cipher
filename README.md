@@ -9,8 +9,14 @@ ASCII Conversions.
 
 `npm i AskAscii`
 
-**Usage**
+**Setting Up**
 
 ```js
 const { convertToAscii, convertIntegerToChar } = require("AskAscii");
 ```
+
+## Usage
+
+1. **convertToAscii**
+
+1. **convertIntegerToChar**
