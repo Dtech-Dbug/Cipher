@@ -1,2 +1,6 @@
-# Cipher
-ASCII Conversions and Mini Cryptography Model aka cipher texts.
+# AskAscii
+
+ASCII Conversions.
+
+- Characters to Integers
+- Integers to Characters
