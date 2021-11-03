@@ -17,11 +17,10 @@ const { convertToAscii, convertIntegerToChar } = require("AskAscii");
 
 ## Usage
 
-|    Function Name 🤖     | Parameters | Return type |
-| :---------------------: | ---------- | ----------- |
-| guide to contribution 🗺 |
-|    picture preview 🖼    |
-|       in-action 📽       |
+|      Function Name 🤖       | Parameters ⚗           | Return type 🎁                                                         |
+| :-------------------------: | ---------------------- | ---------------------------------------------------------------------- |
+|    convertToAscii 🔡➡🔢     | A String               | An array of all the ASCII codes corresponding to the character indices |
+| convertIntegerToChar 🔢➡ 🔡 | Any Number Of Integers | Returns the corresponding ASCII character corresponding to the integer |
 
 1. **convertToAscii**
 
