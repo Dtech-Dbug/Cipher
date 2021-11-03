@@ -22,9 +22,6 @@ function convertToAscii(expression: text) {
   }
 }
 
-let checkAscii = convertToAscii("HI!");
-// console.log(...checkAscii);
-
 function convertIntegerToChar(...args: number[]) {
   let charArray: string[] = [];
   args.forEach((item) => {
@@ -32,5 +29,8 @@ function convertIntegerToChar(...args: number[]) {
   });
   return charArray.join("");
 }
-// let checkChar = ;
-// console.log(convertIntoToChar(72, 73));
+
+module.exports = {
+  convertToAscii,
+  convertIntegerToChar,
+};
