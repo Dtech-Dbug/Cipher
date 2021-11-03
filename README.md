@@ -17,6 +17,12 @@ const { convertToAscii, convertIntegerToChar } = require("AskAscii");
 
 ## Usage
 
+|    Function Name 🤖     | Parameters | Return type |
+| :---------------------: | ---------- | ----------- |
+| guide to contribution 🗺 |
+|    picture preview 🖼    |
+|       in-action 📽       |
+
 1. **convertToAscii**
 
 1. **convertIntegerToChar**
